@@ -10,7 +10,7 @@ const VideoLayout = () => {
   const [isMetadataLoaded, setIsMetadataLoaded] = useState(false);
   const navigate = useNavigate();
 
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5001";
+  const API_URL = process.env.REACT_APP_API_URL || "https://video-completion-tracker.onrender.com";
 
   // 🔐 Logout handler
   const handleLogout = () => {
