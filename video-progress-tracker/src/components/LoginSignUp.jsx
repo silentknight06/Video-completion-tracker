@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const LoginSignup = () => {
-  const API_URL = process.env.REACT_APP_API_URL || "https://video-completion-tracker.onrender.com"
+  const API_URL = process.env.REACT_APP_API_URL || "https://video-completion-tracker.onrender.com";
   const [isSignup, setIsSignup]   = useState(true);
   const [name, setName]           = useState("");
   const [email, setEmail]         = useState("");
