@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const LoginSignup = () => {
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5001"
   const [isSignup, setIsSignup]   = useState(true);
   const [name, setName]           = useState("");
   const [email, setEmail]         = useState("");
@@ -35,8 +36,8 @@ const LoginSignup = () => {
     if (isSignup) userData.name = name;
 
     const apiUrl = isSignup
-      ? "http://localhost:5001/api/auth/signup"
-      : "http://localhost:5001/api/auth/login";
+    ?`${API_URL}/api/auth/signup`
+:`${API_URL}/api/auth/login`;
 
     try {
       const { data } = await axios.post(apiUrl, userData);

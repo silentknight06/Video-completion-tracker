@@ -1,0 +1,14 @@
+
+node_modules/
+vide-progress-tracker/node_modules/
+video-backend/node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Build outputs
+dist/
+build/

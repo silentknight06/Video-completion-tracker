@@ -1,0 +1,15 @@
+{
+    "name": "fullstack-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "install": "cd video-backend && npm install && cd ../video-progress-tracker && npm install",
+      "start": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd video-backend && npm start",
+      "client": "cd video-progress-tracker && npm start"
+    },
+    "devDependencies": {
+      "concurrently": "^8.0.1"
+    }
+  }
+  

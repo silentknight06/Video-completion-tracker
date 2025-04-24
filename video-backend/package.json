@@ -4,7 +4,7 @@
     "description": "Node.js backend with MongoDB and JWT authentication for video layout app",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "nodemon server.js",
         "dev": "nodemon server.js"
     },
     "keywords": [],
